@@ -3,8 +3,8 @@ import './navigation.css';
 
 class Navigation extends React.Component {
 
-    navigation = (desination) => {
-        console.log("navigation vers " + desination);
+    navigation = (destination) => {
+        this.props.onNavigation(destination);
     }
 
     render() {
